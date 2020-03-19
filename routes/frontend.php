@@ -7,8 +7,8 @@ Route::group(['namespace'=>'Web'],function(){
         return view('web.forgot-password');
     })->name('web.forgot-password');
 
-    Route::get('login', 'UsersLoginController@showUserLoginForm')->name('web.login');
-    Route::post('login', 'UsersLoginController@userLogin')->name('web.login_submit');
+    Route::get('login-form', 'UsersLoginController@showUserLoginForm')->name('web.login');
+    Route::post('login-submit', 'UsersLoginController@userLogin')->name('web.login_submit');
 
     Route::get('logout', 'UsersLoginController@logout')->name('web.logout');
 
